@@ -35,4 +35,6 @@ Feel free to explore and experiment with different Git commands!
 
 Updated text for commit!
 
+Updated tetx for commit 2
+
 
