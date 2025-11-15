@@ -1,3 +1,5 @@
-Readme for math function (first test)
+Math Function — Test
 
-This README is for the math function project. It is the first test file used to check GitHub functions (commit, push, and workflow).
+Simple project to verify GitHub operations (commit, push, CI).
+
+See project files for the implementation and tests.
