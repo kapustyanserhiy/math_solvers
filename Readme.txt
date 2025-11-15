@@ -40,3 +40,5 @@ Updated tetx for commit 2
 Commit and synchronize
 
 Branch 1 - IGNORE ---
+
+Branch 1 added
