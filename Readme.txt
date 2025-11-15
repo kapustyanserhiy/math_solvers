@@ -16,5 +16,21 @@ Additional test content:
 This is a learning project to understand how Git and GitHub work together.
 More changes will be added as we continue testing.
 
+Project Goals:
+1. Master Git fundamentals
+2. Understand branching and merging
+3. Practice pull requests
+4. Learn collaborative workflows
+5. Build experience with remote repositories
+
+Key Features:
+- Version control with Git
+- Remote repository management
+- Commit history tracking
+- Branch management
+- Collaborative development practices
+
+Feel free to explore and experiment with different Git commands!
+
 
 
