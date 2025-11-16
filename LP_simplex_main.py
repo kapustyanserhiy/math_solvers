@@ -43,6 +43,6 @@ if __name__ == "__main__":
      result = lp_simplex_functions.simplex_minimize(c, A, b, bounds=bounds)
 
      # Plot the feasible region and solution (only for 2 variables)
-     lp_simplex_functions.plot_simplex(c, A, b, bounds, result)
+     # lp_simplex_functions.plot_simplex(c, A, b, bounds, result)
 
 

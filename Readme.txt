@@ -25,4 +25,4 @@ Quick start
 
 
 License
-See the LICENSE file for licensing details.
+Open source. Enjoy to use and modify!
