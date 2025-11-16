@@ -17,7 +17,7 @@ def simplex_minimize(c, A, b, bounds=None):
     
     if result.success:
         print("Optimal solution (x):", result.x)
-        print("Minimum objective value:", result.fun)
+        print("Objective value at that point (y):", result.fun)
     else:
         print("Optimization failed:", result.message)
     
