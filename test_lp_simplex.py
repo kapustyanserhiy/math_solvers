@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from lp_simplex import simplex_minimize
+from lp_simplex_functions import simplex_minimize
 
 
 class TestSimplexMinimize(unittest.TestCase):

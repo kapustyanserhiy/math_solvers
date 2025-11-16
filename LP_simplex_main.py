@@ -1,5 +1,5 @@
 
-import lp_simplex
+import lp_simplex_functions
 
 if __name__ == "__main__":
      # -------------------------------------------------------------
@@ -40,6 +40,9 @@ if __name__ == "__main__":
      ]
 
      # Run the solver
-     result = lp_simplex.simplex_minimize(c, A, b, bounds=bounds)
+     result = lp_simplex_functions.simplex_minimize(c, A, b, bounds=bounds)
+
+     # Plot the feasible region and solution (only for 2 variables)
+     lp_simplex_functions.plot_simplex(c, A, b, bounds, result)
 
 
