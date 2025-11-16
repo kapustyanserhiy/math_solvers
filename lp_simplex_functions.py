@@ -5,6 +5,9 @@ from scipy.optimize import linprog
 
 def plot_simplex(c, A, b, bounds, result=None):
 
+    
+    plt.rcParams.update({'font.family': 'Arial', 'font.size': 16})
+
     x1s = np.linspace(-1, 10, 400)
     x2s = np.linspace(-1, 10, 400)
     X1, X2 = np.meshgrid(x1s, x2s)
@@ -30,13 +33,13 @@ def plot_simplex(c, A, b, bounds, result=None):
 
     # Plot bounds as dashed lines (after figure creation)
     if bounds[0][0] is not None:
-        plt.axvline(bounds[0][0], color='grey', linestyle='--', label='x1 lower')
+        plt.axvline(bounds[0][0], color='grey', linestyle='--', label='x1 lower bound')
     if bounds[0][1] is not None:
-        plt.axvline(bounds[0][1], color='grey', linestyle='--', label='x1 upper')
+        plt.axvline(bounds[0][1], color='grey', linestyle='--', label='x1 upper bound')
     if bounds[1][0] is not None:
-        plt.axhline(bounds[1][0], color='grey', linestyle='--', label='x2 lower')
+        plt.axhline(bounds[1][0], color='grey', linestyle='--', label='x2 lower bound')
     if bounds[1][1] is not None:
-        plt.axhline(bounds[1][1], color='grey', linestyle='--', label='x2 upper')
+        plt.axhline(bounds[1][1], color='grey', linestyle='--', label='x2 upper bound')
 
     # Plot constraint lines
     for i in range(len(A)):
