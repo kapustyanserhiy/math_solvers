@@ -25,7 +25,9 @@ if __name__ == "__main__":
           [ 2,  1]    #  2x1 + x2 ≤ 6
      ]
 
-     b = [1, 4, 6]   # RHS values for each constraint
+     b = [1,
+          4,
+          6]   # RHS values for each constraint
 
      
      # VARIABLE BOUNDS
