@@ -16,15 +16,13 @@ def simplex_minimize(c, A, b, bounds=None):
     result = linprog(c, A_ub=A, b_ub=b, bounds=bounds, method="highs-ds")
     
     if result.success:
-        print("Optimal solution (x):", result.x)
-        print("Objective value at that point (y):", result.fun)
+        if len(result.x) >= 2:
+            print(f"Optimal solution: [x1={result.x[0]}, x2={result.x[1]}]")
+        else:
+            print("Optimal solution:", result.x)
+        print("Objective value at that point(y):", result.fun)
     else:
         print("Optimization failed:", result.message)
     
     return result
 
-
-
-
-
-      
