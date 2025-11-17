@@ -33,13 +33,13 @@ def plot_simplex(c, A, b, bounds, result=None):
 
     # Plot bounds as dashed lines (after figure creation)
     if bounds[0][0] is not None:
-        plt.axvline(bounds[0][0], color='grey', linestyle='--', label='x1 lower bound')
+        plt.axvline(bounds[0][0], color='grey', linestyle='--', label='x1 bound')
     if bounds[0][1] is not None:
-        plt.axvline(bounds[0][1], color='grey', linestyle='--', label='x1 upper bound')
+        plt.axvline(bounds[0][1], color='grey', linestyle='--', label='x1 bound')
     if bounds[1][0] is not None:
-        plt.axhline(bounds[1][0], color='grey', linestyle='--', label='x2 lower bound')
+        plt.axhline(bounds[1][0], color='grey', linestyle='--', label='x2 bound')
     if bounds[1][1] is not None:
-        plt.axhline(bounds[1][1], color='grey', linestyle='--', label='x2 upper bound')
+        plt.axhline(bounds[1][1], color='grey', linestyle='--', label='x2 bound')
 
     # Plot constraint lines
     for i in range(len(A)):
